@@ -2,6 +2,7 @@ FROM n8nio/n8n:latest
 
 USER root
 RUN npm install n8n-nodes-discord
+RUN npm install n8n-nodes-discord-trigger
 USER node
 
 ENV N8N_CUSTOM_EXTENSIONS=/home/node/.n8n/custom
